@@ -1,0 +1,23 @@
+﻿/* Print-specific styles */
+@media print {
+    .no-print { display: none !important; }
+    body {
+        padding: 1cm !important;
+        background-color: white !important;
+        -webkit-print-color-adjust: exact !important;
+        color-adjust: exact !important;
+    }
+    .report-container {
+        max-width: none !important;
+        box-shadow: none !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+    .print-section, canvas, table {
+        page-break-inside: avoid !important;
+    }
+    canvas {
+        max-width: 100% !important;
+        height: auto !important;
+    }
+}
